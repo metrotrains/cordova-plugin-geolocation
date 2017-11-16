@@ -57,7 +57,7 @@
 {
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self; // Tells the location manager to send updates to this object
-    self.locationManager.activityType = CLActivityType.otherNavigation;
+    self.locationManager.activityType = CLActivityTypeOtherNavigation;
     __locationStarted = NO;
     __highAccuracyEnabled = NO;
     self.locationData = nil;
