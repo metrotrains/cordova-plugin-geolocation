@@ -138,6 +138,7 @@
     [self.locationManager stopUpdatingLocation];
     [self.locationManager startUpdatingLocation];
     __locationStarted = YES;
+    self.locationManager.activityType = CLActivityTypeOtherNavigation; // for good measure.
     if (enableHighAccuracy) {
         __highAccuracyEnabled = YES;
         // Set distance filter to 5 for a high accuracy. Setting it to "kCLDistanceFilterNone" could provide a
